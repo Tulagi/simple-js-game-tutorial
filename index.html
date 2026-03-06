@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单打砖块游戏 - 教程</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .game-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        canvas {
+            border: 2px solid #333;
+            background-color: #000;
+        }
+        
+        .controls {
+            margin-top: 15px;
+            color: #666;
+        }
+        
+        .instructions {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>简单打砖块游戏</h1>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            使用 ← → 方向键移动挡板<br>
+            按空格键开始游戏
+        </div>
+    </div>
+    
+    <div class="instructions">
+        <h2>游戏说明</h2>
+        <p>这是一个简单的打砖块游戏教程项目。通过这个项目，你将学习：</p>
+        <ul>
+            <li>HTML5 Canvas 基础</li>
+            <li>JavaScript 游戏循环</li>
+            <li>键盘事件处理</li>
+            <li>基本的碰撞检测</li>
+            <li>游戏状态管理</li>
+        </ul>
+        <p>查看源码了解具体实现细节！</p>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
